@@ -1,6 +1,6 @@
 [![Coverage Status](https://coveralls.io/repos/lightblue-platform/lightblue-client/badge.png?branch=master)](https://coveralls.io/r/lightblue-platform/lightblue-client?branch=master)
 
-# Whis is lightblue?
+# What is lightblue?
 
 Cloud focused data services with dynamic querying, versioned schemas, and robust security.
 
@@ -45,7 +45,7 @@ First, set configuration objects by creating a `LightblueClientConfiguration` ob
         config.setUseCertAuth(true);
         config.setCompression(LightblueClientConfiguration.Compression.NONE);
 
-* Be sure that the certificate files wind up on the same runtime classpath as the lightblue libraries, since this is the source lightblue will use when it attempts to load the certificates.
+* Be sure that the certificate files wind up on the same runtime classpath as the lightblue libraries, or prefix a file resource using `file://` + `$filename`.
 
 ### Client Instantiation
 After a configuration has been defined, a lightblue java client can be instantiated.
